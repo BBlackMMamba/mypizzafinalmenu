@@ -108,10 +108,6 @@ function Footer() {
   const closeHour = 22;
   const isOpen = hour >= openHour && hour <= closeHour;
 
-  //if (hour >= openHour && hour <= closeHour) alert('We are currenlty Open')
-  //else alert("Sorry We're closed");
-  // {new Date().toLocaleTimeString().split("", [4])}. We're currently Open
-  //if (!isOpen) return (< p>CLOSED</>)
 
   return (<footer className="footer">
     {isOpen ? (<Order closeHour={closeHour} openHour={openHour} />
@@ -136,9 +132,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-//Continue from Lesson 56;
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log));
-
-//rendering lists - don't add pizza manually, write code which will add. use map method.
